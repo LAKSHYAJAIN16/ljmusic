@@ -20,7 +20,7 @@ export default function Parchive() {
             style={{ display: "flex", alignItems: "center" }}
           >
             <a href="?intent=home">
-              <Avatar src="/src/favic.jpg" alt="LJMUSIC" />
+              <Avatar src="src/favic.jpg" alt="LJMUSIC" />
             </a>
 
             <Text size="xl" weight={700} style={{ paddingLeft: "10px" }}>
@@ -100,7 +100,7 @@ export default function Parchive() {
             <Badge size="sm">Sheet Music</Badge>
             <br />
             <iframe
-              src={data[selec - 1].sheetMusicLink}
+              src={"src" + data[selec - 1].sheetMusicLink}
               width={500}
               height={600}
             ></iframe>
@@ -111,7 +111,7 @@ export default function Parchive() {
             <br />
             <audio
               controls
-              src={data[selec - 1].midiLink}
+              src={"src" + data[selec - 1].midiLink}
               autoPlay={false}
             ></audio>
             <br />

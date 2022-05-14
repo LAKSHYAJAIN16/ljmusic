@@ -14,7 +14,7 @@ function Home() {
           style={{ display: "flex", alignItems: "center" }}
         >
           <a href="?intent=home">
-            <Avatar src="/src/favic.jpg" alt="LJMUSIC" />
+            <Avatar src="/favic.jpg" alt="LJMUSIC" />
           </a>
 
           <Text size="xl" weight={700} style={{ paddingLeft: "10px" }}>
