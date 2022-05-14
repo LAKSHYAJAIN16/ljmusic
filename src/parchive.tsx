@@ -19,7 +19,7 @@ export default function Parchive() {
             p="xs"
             style={{ display: "flex", alignItems: "center" }}
           >
-            <a href="/home">
+            <a href="?intent=home">
               <Avatar src="/src/favic.jpg" alt="LJMUSIC" />
             </a>
 

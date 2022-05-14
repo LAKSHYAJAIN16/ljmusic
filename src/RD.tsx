@@ -6,7 +6,8 @@ export default function RD() {
   const [urL, setUrL] = useState<string>("pasta");
 
   useEffect(() => {
-    const uri = new URL(window.location.href).pathname;
+    const uri = new URL(window.location.href).searchParams.get("intent") || "home";
+    console.log(uri);
     setUrL(uri);
   }, []);
 
@@ -14,9 +15,9 @@ export default function RD() {
     <>
       {urL !== "pasta" && (
         <>
-          {urL === "/" && <Home />}
-          {urL === "/home" && <Home />}
-          {urL === "/parchive" && <Parchive />}
+          {urL === "" && <Home />}
+          {urL === "home" && <Home />}
+          {urL === "parchive" && <Parchive />}
         </>
       )}
     </>

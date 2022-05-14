@@ -13,7 +13,7 @@ function Home() {
           p="xs"
           style={{ display: "flex", alignItems: "center" }}
         >
-          <a href="/home">
+          <a href="?intent=home">
             <Avatar src="/src/favic.jpg" alt="LJMUSIC" />
           </a>
 
@@ -30,7 +30,7 @@ function Home() {
               Download Sheet Music
             </Button>
 
-            <a href="/parchive">
+            <a href="?intent=parchive">
               <Button size="sm" style={{ marginLeft: "130px" }}>
                 Piece Archive
               </Button>
